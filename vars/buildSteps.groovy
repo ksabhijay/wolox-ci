@@ -1,4 +1,4 @@
-@Library('wolox-ci')
+import org.jenkinsci.plugins.workflow.libs.Library@Library('wolox-ci')
 import com.wolox.*;
 import com.wolox.steps.Step;
 
