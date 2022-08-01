@@ -22,7 +22,7 @@ def call(String yamlName) {
     // each service is a closure that when called it executes its logic and then calls a closure, the next step.
     projectConfig.services.each {
 
-        closure = "${it.service.getVar()}"(projectConfig, it.version, closure);
+       def closure = "${it.service.getVar()}"(projectConfig, it.version, closure);
     }
 
     // we execute the top level closure so that the cascade starts.
